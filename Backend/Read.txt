@@ -8,11 +8,27 @@ In package.json file  change
   "main": "server.js",
   "type": "module",
 Run npm i --save-d nodemon
-Then run server   npx nodemon                       Server is running on port 4000
+Then run server   npx nodemon                       Server is running on port 4000                   PORT = 4000
 then go to localhost:4000 on browser                you see Hello, World! on browser
 make a file on uber folder  .gitignore              .env   and    node_modules
+   git init
+   git add .
+   git commit -m "commit"
+   git branch -M main
+   git remote add origin https://github.com/Pushpendra7409/Uber.git
+   git push -u origin main
+
 
 STEP IInd
+
+Run npm i mongoose
+make a folder inside Backend  db and file db.js                DB_CONNECT = mongodb://0.0.0.0/uber_clone
+  Server is running on port 4000
+  Connected to database
+  
+
+
+
 
 
 
