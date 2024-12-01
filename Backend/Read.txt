@@ -25,7 +25,22 @@ Run npm i mongoose
 make a folder inside Backend  db and file db.js                DB_CONNECT = mongodb://0.0.0.0/uber_clone
   Server is running on port 4000
   Connected to database
-  
+
+
+STEP IIIrd
+
+Make a folder in Backend called models and file user.model.js
+make usermodel
+Run npm i bcryptjs jsonwebtoken              for basic authentication
+Make a folder in Backend called controllers and file user.controller.js
+
+
+STEP IVth
+
+
+
+
+
 
 
 
