@@ -1,0 +1,19 @@
+STEP Ist
+
+Make a Folder Backend
+Run npm init -y
+Run npm i express cors dotenv
+Make a file app.js  &  server.js
+In package.json file  change
+  "main": "server.js",
+  "type": "module",
+Run npm i --save-d nodemon
+Then run server   npx nodemon                       Server is running on port 4000
+then go to localhost:4000 on browser                you see Hello, World! on browser
+make a file on uber folder  .gitignore              .env   and    node_modules
+
+STEP IInd
+
+
+
+
