@@ -47,6 +47,16 @@ Make a register Route
 STEP Vth
 
 Make a Login route
+Make a Profile routes
+make a folder inside Backend middleware and file auth.middleware.js
+Run npm i cookie-parser
+
+
+STEP VIth
+
+
+
+
 
 
 
