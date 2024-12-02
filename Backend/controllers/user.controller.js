@@ -1,6 +1,7 @@
 import userModel from "../models/user.model.js";
 import { createUser } from '../services/user.service.js'
 import { validationResult } from 'express-validator';
+import blocklistTokenModel from '../models/blocklistToken.model.js';
 
 export const registerUser = async (req, res, next) => {
 
@@ -64,4 +65,15 @@ export const getUserProfile = async (req, res, next) => {
 
     res.status(200).json(req.user);
 
+  };
+
+export const logoutUser = async (req, res, next) => {
+    res.clearCookie('token');
+    const token =
+      req.cookies?.token || 
+      (req.headers.authorization && req.headers.authorization.split(' ')[1]);
+
+      await blocklistTokenModel.create({ token });
+
+    res.status(200).json({ message: 'Logged out successfully' });
   };

@@ -3,6 +3,7 @@ const router = express.Router();
 import { body, validationResult } from 'express-validator';
 import { registerUser, loginUser, getUserProfile } from '../controllers/user.controller.js';
 import { authUser } from '../middlewares/auth.middleware.js'
+import { logoutUser } from '../controllers/user.controller.js';
 
 router.post('/register', [ 
     body('fullname.firstname').isLength({ min: 3 }).withMessage('First name atleast 3 characters long'),
@@ -19,6 +20,8 @@ router.post('/login', [
 
 
 router.get('/profile', authUser, getUserProfile);
+
+router.get('/logout', authUser, logoutUser);
 
 
 

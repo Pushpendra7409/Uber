@@ -50,9 +50,16 @@ Make a Login route
 Make a Profile routes
 make a folder inside Backend middleware and file auth.middleware.js
 Run npm i cookie-parser
+It can take token either from cookie or from Header
 
 
 STEP VIth
+
+Make Logout Route form token either from cookie or Header
+Make a file inside models blocklistToken.model.js
+and update auth.middleware.js
+
+
 
 
 
