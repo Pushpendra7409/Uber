@@ -41,6 +41,13 @@ Make a folder in Backend called routes and file user.routes.js
 Run npm i express-validator                      for valid data or not
 Make a folder in Backend called services and file user.service.js
 Add JWT_SECRET to .env file
+Make a register Route
+
+
+STEP Vth
+
+Make a Login route
+
 
 
 
