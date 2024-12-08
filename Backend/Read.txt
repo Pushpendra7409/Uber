@@ -59,6 +59,17 @@ Make Logout Route form token either from cookie or Header
 Make a file inside models blocklistToken.model.js
 and update auth.middleware.js
 
+STEP VIIth
+
+Make a file under models captain.model.js same as user model but some mode fields
+Make a file under controllers captain.controller.js
+Make a file under models captain.model.js
+Make a file under routes captain.routes.js
+Make a file under services captain.services.js
+
+
+
+
 
 
 

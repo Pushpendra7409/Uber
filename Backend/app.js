@@ -2,7 +2,8 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import express from 'express';
 import connectToDb from './db/db.js';
-import router from './routes/user.routes.js';
+import userrouter from './routes/user.routes.js';
+import captainrouter from './routes/captain.routes.js';
 import cookieParser from 'cookie-parser';
 
 dotenv.config();
@@ -17,6 +18,7 @@ app.get('/', (req, res) => {
     res.send('Hello, World!');
 });
 
-app.use('/users', router);
+app.use('/users', userrouter);
+app.use('/captains', captainrouter);
 
 export default app;

@@ -13,6 +13,12 @@ export const registerUser = async (req, res, next) => {
 //    console.log(req.body);
 
    const { fullname, password, email } = req.body;
+
+   const isUserAlreadyExists = await userModel.findOne({ email });
+
+    if (isUserAlreadyExists) {
+        return res.status(400).json({ message: 'User Already exists' });
+    }
    
     const hashedPassword = await userModel.hashPassword(password);
 
